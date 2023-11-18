@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 //dekarasi function
@@ -12,9 +13,11 @@ int main(int argc, char const *argv[])
     int pilihan;
     bool keluar = false;
 
-    while (false)
+    while (keluar == false)
     {
-        cout << "======================";
+        cout << "===============================" << endl;
+        cout << "     Sistem Persamaan Linier " << endl;
+        cout << "===============================" << endl;
         cout << "1. Persamaan Liner Satu Variabel" << endl;
         cout << "2. Persamaan Liner Dua Variabel" << endl;
         cout << "3. Persamaan Liner Tiga Variabel" << endl;
@@ -25,13 +28,13 @@ int main(int argc, char const *argv[])
         switch (pilihan)
         {
         case 1:
-            PersSatuVar();
+            //PersSatuVar();
             break;
         case 2:
-            PersDuaVar();
+            //PersDuaVar();
             break;
         case 3:
-            PersTigaVar();
+            //PersTigaVar();
             break;
         case 4:
             keluar = true;
@@ -41,6 +44,6 @@ int main(int argc, char const *argv[])
             break;
         }
     }
-    
+    system("cls");
     return 0;
 }

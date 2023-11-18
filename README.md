@@ -1,2 +1,5 @@
 Tugas Kelompok 2 Alin:
-1. membuat persamman liner
+Membuat Persamman Liner:
+    1. satu variabel
+    2. dua variabel
+    3. tiga variabel
