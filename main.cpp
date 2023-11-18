@@ -1,11 +1,46 @@
 #include <iostream>
 using namespace std;
 
+//dekarasi function
+int PersSatuVar();
+int PersDuaVar();
+int PersTigaVar();
+
 int main(int argc, char const *argv[])
 {
-    int a = 20;
-    int b = 10;
-    cout << "Hello World";
-    cout << a + b;
+    //deklarasi variabel
+    int pilihan;
+    bool keluar = false;
+
+    while (false)
+    {
+        cout << "======================";
+        cout << "1. Persamaan Liner Satu Variabel" << endl;
+        cout << "2. Persamaan Liner Dua Variabel" << endl;
+        cout << "3. Persamaan Liner Tiga Variabel" << endl;
+        cout << "4. Keluar" << endl;
+        cout << endl;
+        cout << "Pilih Menu (1/2/3/4): ";
+        cin >> pilihan;
+        switch (pilihan)
+        {
+        case 1:
+            PersSatuVar();
+            break;
+        case 2:
+            PersDuaVar();
+            break;
+        case 3:
+            PersTigaVar();
+            break;
+        case 4:
+            keluar = true;
+            break;
+        default:
+            cout << "Pilihan tidak ditemukan";
+            break;
+        }
+    }
+    
     return 0;
 }
