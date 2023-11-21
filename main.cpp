@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
             keluar = true;
             break;
         default:
-            cout << "Pilihan tidak ditemukan test";
+            cout << "Pilihan tidak ditemukan test test";
             break;
         }
     }
